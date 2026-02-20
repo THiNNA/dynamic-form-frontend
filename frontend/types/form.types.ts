@@ -9,7 +9,7 @@ export type FieldType =
 /** Validation Rule */
 export interface ValidationRule {
   type: 'required' | 'min' | 'max' | 'minLength' | 'maxLength'
-      | 'pattern' | 'email' | 'url' | 'custom'
+        | 'pattern' | 'email' | 'url' | 'custom'
   value?: string | number | boolean
   message: string
 }
@@ -18,7 +18,7 @@ export interface ValidationRule {
 export interface ConditionalLogic {
   fieldName: string
   operator: 'equals' | 'not_equals' | 'contains'
-          | 'greater_than' | 'less_than' | 'is_empty' | 'is_not_empty'
+            | 'greater_than' | 'less_than' | 'is_empty' | 'is_not_empty'
   value: any
   action: 'show' | 'hide' | 'enable' | 'disable' | 'set_value'
   targetValue?: any
